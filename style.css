@@ -1,0 +1,44 @@
+body{
+  margin:0;
+  font-family:Arial;
+  background:white;
+  color:black;
+}
+
+.dark{
+  background:black;
+  color:white;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+}
+
+.container{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:lightgray;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+  .container{
+    grid-template-columns:1fr;
+  }
+
+  .header{
+    flex-direction:column;
+  }
+
+}
